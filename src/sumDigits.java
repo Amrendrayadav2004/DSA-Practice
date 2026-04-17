@@ -1,12 +1,12 @@
-public class factorial {
+public class sumDigits {
     public static void main(String[] args) {
-        int ans = sum( 6);
+int ans =sum(1342);
         System.out.println(ans);
     }
     static int sum(int n){
-        if(n<=1){
-            return 1;
+        if(n==0){
+            return 0;
         }
-        return n + sum(n-1);
+        return (n%10) + sum(n/10);
     }
 }
